@@ -1,0 +1,39 @@
+<!--
+     Will display the user profile
+    - Display - Avatar Image, First and Last name, Email address
+    - All the users campgrounds    
+-->
+
+<% include ../partials/header %>
+<div class="row">
+    <div class="col-md-4">
+        <h1><%= user.firstName %> <%= user.lastName %> </h1>
+        <div class="card" style="width: 18rem;">
+            <img src="<%= user.avatar %> " class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title"> <a href="mailto:"><%= user.email %></a> </h6>
+            </div>
+          </div>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+
+    </div>
+    <div class="col-md-8">
+        <h1 class="pl-4"> Campgrounds Created</h1>
+        <div class="col-md-12  d-flex flex-wrap justify-content-between">
+            <% campgrounds.forEach(function(campground) { %>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="<%=campground.image%>" class="card-img-top" alt="Campground Image">
+                        <div class="card-body">
+                        <h5 class="card-title"><%= campground.name %></h5>
+                        <a href="/campgrounds/<%=campground._id %>" class="btn btn-primary">View More Information</a>
+                        </div>
+                    </div>
+                </div>
+            <% }); %> 
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>
