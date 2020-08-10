@@ -3,7 +3,7 @@
     <head>
         <!-- Make site responsive on mobile/tablet -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>YelpCamp</title>
+        <title>Let's Go Camping</title>
         <!-- Bootstrap CDN Link -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Font Awesome -->
@@ -45,7 +45,7 @@
 
     <div class="container mb-2">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">YelpCamp</a>
+            <a class="navbar-brand" href="/">Let's Go Camping</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -61,7 +61,7 @@
                     <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %> nav-item"><a class="nav-link" href="/login">Login</a></li>
                     <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %> nav-item"><a class="nav-link" href="/register">Sign Up</a></li>
                 <% } else { %>
-                    <li class="nav-item"><a class="nav-link" href="#">Signed in as: <%= currentUser.username %></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/profile/<%= currentUser.id %>">Signed in as: <%= currentUser.username %></a></li>
                     <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                 <% } %>
             </ul>
