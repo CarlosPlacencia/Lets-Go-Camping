@@ -8,7 +8,7 @@
             <div class="col-lg-4 col-md-6 col-xs-12">
                 <form action="/campgrounds/<%= campground._id %>/comments" method="POST">
                     <div class="form-group">
-                        <input class="form-control" type="text" name="comment[text]" placeholder="Text">
+                        <input class="form-control" type="text" name="comment[text]" placeholder="Text" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-lg btn-primary btn-block">Submit!</button>
