@@ -1,6 +1,6 @@
 # Demo
 ![Let's Go Camping Demo](/demo/LetsGoCamping.gif)
-Let's Go Camping is a website where users can find their next camping destination!
+* Let's Go Camping is a website where users can find their next camping destination!
 
 # Features
 * Resposive Web Design
