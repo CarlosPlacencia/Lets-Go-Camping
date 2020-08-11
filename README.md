@@ -1,5 +1,5 @@
 # Demo
-![Let's Go Camping Demo](demo\Let's Go Camping.gif)
+![Let's Go Camping Demo](demo/Let's Go Camping.gif)
 Let's Go Camping is a website where users can find their next camping destination!
 
 # Features
